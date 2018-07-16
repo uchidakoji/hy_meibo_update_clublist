@@ -33,14 +33,6 @@ function updateClubList() {
                 }                
             }
             clubList.setChoices(clubsChoice);
-            /*
-            var choices = clubList.getChoices();
-            for(var j = 0; j < choices.length; j++){
-                //Logger.log(choices[j].getValue());
-                clubs.push(choices[j].getValue());
-            }
-            */
-            //Logger.log(choices);
         }
     }
 
@@ -60,14 +52,6 @@ function updateClubList() {
         body: body,
         replyTo: replyToAddress,
     });
-
-    /*var clubSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(listSheetName);
-    var row = 2;
-    for(var k = 0; k < clubs.length; k++){
-        clubSheet.getRange(row, 1).setValue(clubs[k]);
-        row++;
-    }
-    */
         
 }
 
